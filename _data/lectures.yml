@@ -1,16 +1,16 @@
 
-- date: Tues, 2025/09/23
-  lecturer: 
+- date: Sun, 2026/09/20
+  lecturer:
   title: >
     <strong>Introduction to Machine Learning</strong>
-  slides: 
+  slides:
     - "../assets/slides/lecture0.pdf"
     - "../assets/slides/lecture1.pdf"
   readings:
     - <a href="https://palm.seu.edu.cn/weit/ml24/resources/VC.pdf" target="_blank">Rademacher Complexity and VC-Dimension</a>
-  logistics:
+  logistics: 首次上课；3-4节，教一-408（补10月6日课程）
 
-- date: Thurs, 2025/09/25
+- date: Tues, 2026/09/22
   lecturer:
   title: >
     <strong>Introduction to Machine Learning (continued), Linear Regression</strong>
@@ -18,7 +18,7 @@
   readings:
   logistics:
 
-- date: Sun, 2025/09/28
+- date: Thurs, 2026/09/24
   lecturer:
   title: >
     <strong>Linear Regression (continued)</strong>
@@ -26,7 +26,7 @@
   readings:
     - <a href="https://pan.seu.edu.cn/link/0DCABBC986A29437B634E3C9B8F06F0D" target="_blank">	Newton's Method & Gradient Descent</a>
     - <a href="https://cseweb.ucsd.edu//~elkan/250B/logreg.pdf" target="_blank"> Maximum Liklihood Estimation </a>
-  logistics: 补10月7号课程; Lab1 Out
+  logistics:
 
 - date: Tues, 2025/09/30
   title: >
@@ -39,7 +39,7 @@
   title: >
     <strong>Logistic Regression (continued)</strong>
   slides: "../assets/slides/lecture3.pdf"
-  readings: 
+  readings:
     - <a href="https://www.princeton.edu/~aaa/Public/Teaching/ORF523/S16/ORF523_S16_Lec7_gh.pdf" target="_blank"> Convexity </a>
     - <a href="https://en.wikipedia.org/wiki/Taylor_series" target="_blank"> Taylor series </a>
   logistics: HW1 Out
@@ -49,7 +49,7 @@
   title: >
     <strong> Model Selection & Evaluation</strong>
   slides: "../assets/slides/lecture4.pdf"
-  readings: 
+  readings:
     - <a href="https://en.wikipedia.org/wiki/Multi-label_classification" target="_blank"> Multi-class and Multi-labels </a>
   logistics: 今天有实验课
 
@@ -57,7 +57,7 @@
   title: >
     <strong> Model Selection & Evaluation (continued)</strong>
   slides: "../assets/slides/lecture4.pdf"
-  readings: 
+  readings:
     - <a href="https://pages.cs.wisc.edu/~jdavis/davisgoadrichcamera2.pdf" target="_blank">The Relationship Between Precision-Recall and ROC Curves </a>
     - <a href="http://people.cs.bris.ac.uk/~flach/ICML04tutorial/" target="_blank">Tutorial on "The Many Faces of ROC Analysis in Machine Learning" at ICML'04</a>
   logistics: Lab2 Out
@@ -66,23 +66,23 @@
   title: >
     <strong> Support Vector Machine (Formulation) </strong>
   slides: "../assets/slides/lecture5.pdf"
-  readings: 
-  logistics: 
+  readings:
+  logistics:
 
 - date: Thurs, 2025/10/23
   title: >
     <strong> Support Vector Machine (Optimization)</strong>
   slides: "../assets/slides/lecture5.pdf"
-  readings: 
+  readings:
   -  <a href="https://www.stat.cmu.edu/~ryantibs/convexopt-F15/scribes/11-dual-gen-scribed.pdf" target="_blank"> Primal and dual problems </a>
   -  <a href="https://alex.smola.org/teaching/cmu2013-10-701x/slides/R5-duality_svm.pdf" target="_blank"> Duality and SVM </a>
-  logistics: 
+  logistics:
 
 - date: Tues, 2025/10/28
   title: >
     <strong> Support Vector Machine (Soft margin)</strong>
   slides: "../assets/slides/lecture5.pdf"
-  readings: 
+  readings:
     - <a href="http://jitkomut.eng.chula.ac.th/optim/duality.pdf" target="_blank"> Duality Theory </a>
   logistics: 今天有实验课
 
@@ -92,87 +92,87 @@
   slides: "../assets/slides/lecture5.pdf"
   readings:
     - <a href="https://davidrosenberg.github.io/mlcourse/Archive/2019/Lectures/05a.representer-theorem.pdf" target="_blank"> The Representer Theorem </a>
-  logistics: 
+  logistics:
 
 - date: Tues, 2025/11/04
   title: >
     <strong> Neural Networks: Introduction</strong>
   slides: "../assets/slides/lecture6.pdf"
-  readings: 
-  logistics: 
-  
+  readings:
+  logistics:
+
 - date: Thurs, 2025/11/06
   title: >
     <strong> Neural Networks: Introduction (continued) </strong>
   slides: "../assets/slides/lecture6.pdf"
-  readings: 
-  logistics: 
+  readings:
+  logistics:
 
 - date: Tues, 2025/11/11
   title: >
     <strong> Backpropagation</strong>
   slides: "../assets/slides/lecture7.pdf"
-  readings: 
+  readings:
   logistics: 今天有实验课
 
 - date: Thurs, 2025/11/13
   title: >
     <strong> Backpropagation</strong>
   slides: "../assets/slides/lecture7.pdf"
-  readings: 
+  readings:
   logistics:
 
 - date: Tues, 2025/11/18
   title: >
     <strong> Convolutional Neural Network </strong>
   slides: "../assets/slides/lecture8.pdf"
-  readings: 
+  readings:
   logistics: Lab3 Out
 
 - date: Thurs, 2025/11/20
   title: >
     <strong> Convolutional Neural Network (continued), Recurrent Neural Network </strong>
-  slides: 
+  slides:
     - "../assets/slides/lecture8.pdf"
     - "../assets/slides/lecture9.pdf"
-  readings: 
+  readings:
   logistics:
 
 - date: Tues, 2025/11/25
   title: >
     <strong> Recurrent Neural Network </strong>
   slides: "../assets/slides/lecture9.pdf"
-  readings: 
-  logistics: 
+  readings:
+  logistics:
 
 - date: Thurs, 2025/11/27
   title: >
     <strong> Decision Tree</strong>
   slides: "../assets/slides/lecture10.pdf"
-  readings: 
+  readings:
     - <a href="https://www.princeton.edu/~cuff/ele201/kulkarni_text/information.pdf" target="_blank"> Information, Entropy, and Coding </a>
     - <a href="https://www.youtube.com/watch?v=wr9gUr-eWdA">Decision Tree (lecture@Stanford)</a>
-  logistics: 
+  logistics:
 
 - date: Tues, 2025/12/02
   title: >
     <strong> Decision Tree (continued)</strong>
   slides: "../assets/slides/lecture10.pdf"
-  readings: 
-  logistics: 
+  readings:
+  logistics:
 
 - date: Thurs, 2025/12/04
   title: >
     <strong> Decision Tree (continued)</strong>
   slides: "../assets/slides/lecture10.pdf"
-  readings: 
-  logistics: 
+  readings:
+  logistics:
 
 - date: Tues, 2025/12/09
   title: >
     <strong> Ensemble </strong>
   slides: "../assets/slides/lecture11.pdf"
-  readings: 
+  readings:
   - <a href="https://www.cs.toronto.edu/~mbrubake/teaching/C11/Handouts/AdaBoost.pdf" target="_blank"> AdaBoost </a>
   - <a href="https://www.cs.toronto.edu/~rgrosse/courses/csc311_f20/slides/lec06.pdf" target="_blank"> Bagging, AdaBoost </a>
   logistics: 今天有实验课
@@ -181,57 +181,55 @@
   title: >
     <strong> Ensemble (continued)</strong>
   slides: "../assets/slides/lecture11.pdf"
-  readings: 
+  readings:
   - <a href="https://www.youtube.com/watch?v=UHBmv7qCey4" target="_blank"> Boosting (lecture@MIT) </a>
-  logistics: 
+  logistics:
 
 - date: Tues, 2025/12/16
   title: >
     <strong> Ensemble (continued)</strong>
   slides: "../assets/slides/lecture11.pdf"
-  readings: 
+  readings:
   logistics: 今天有实验课
 
 - date: Thurs, 2025/12/18
   title: >
     <strong> Clustering </strong>
   slides: "../assets/slides/lecture12.pdf"
-  readings: 
-  logistics: 
+  readings:
+  logistics:
 
 - date: Tues, 2025/12/23
   title: >
     <strong> Clustering (continued)</strong>
   slides: "../assets/slides/lecture12.pdf"
-  readings: 
+  readings:
   logistics: 今天有实验课
 
 - date: Thurs, 2025/12/25
   title: >
     <strong> 复习课 </strong>
   slides: "../assets/slides/lecture13.pdf"
-  readings: 
-  logistics: 
+  readings:
+  logistics:
 
 
 - date: Mon, 2026/01/19
   title: >
     <strong>期末考试 （时间 14:00-16:00、地点 教八-302） </strong>
 
-
-
 # - date: Thurs, 2025/12/25
 #   title: >
 #     <strong> Review, Q&A </strong>
 #   slides: "../assets/slides/lecture15.pdf"
-#   readings: 
-#   logistics: 
+#   readings:
+#   logistics:
 
 # - date: Tues, 2024/03/19
 #   title: >
 #     <strong> Linear Discriminant Analysis</strong>
 #   slides: "../assets/slides/lecture5.pdf"
-#   readings: 
+#   readings:
 #   - <a href="https://en.wikipedia.org/wiki/QR_algorithm#Finding_eigenvalues_versus_finding_eigenvectors" target="_blank"> QR algorithm </a>
 #   - <a href="https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process" target="_blank"> Gram–Schmidt process </a>
 #   logistics:
@@ -240,7 +238,7 @@
 #   title: >
 #     <strong> Linear Discriminant Analysis</strong>
 #   slides: "../assets/slides/lecture5.pdf"
-#   readings: 
+#   readings:
 #   - <a href="https://en.wikipedia.org/wiki/Covariance_matrix" target="_blank"> Covariance matrix </a>
 #   - <a href="https://en.wikipedia.org/wiki/Mahalanobis_distance" target="_blank"> Mahalanobis distance </a>
 #   logistics:
@@ -249,23 +247,22 @@
 #   title: >
 #     <strong> Bayesian Classifier </strong>
 #   slides: "../assets/slides/lecture12.pdf"
-#   readings: 
+#   readings:
 #   logistics: Lab3 Due
 
 # - date: Thurs, 2024/05/16
 #   title: >
 #     <strong> Bayesian Classifier (continued) </strong>
 #   slides: "../assets/slides/lecture12.pdf"
-#   readings: 
+#   readings:
 #     - <a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf" target="_blank"> Naive Bayes, Text Classification</a>
 #     - <a href="https://www.youtube.com/watch?v=rqB0XWoMreU" target="_blank"> Naive Bayes (lecture@Cornell) </a>
-#   logistics: 
+#   logistics:
 
 # - date: Tues, 2024/05/21
 #   title: >
 #     <strong> Bayesian Classifier (continued) </strong>
 #   slides: "../assets/slides/lecture12.pdf"
-#   readings: 
+#   readings:
 #     - <a href="https://www.lri.fr/~sebag/COURS/EM_algorithm.pdf" target="_blank"> The Expectation Maximization Algorithm </a>
 #   logistics: HW3 Due; HW4 Out
-
