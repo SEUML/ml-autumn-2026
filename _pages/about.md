@@ -12,7 +12,6 @@ This course will cover the fundamental principles and usage methods of classic m
 
 ***
 
-- **First class:** 2026年9月20日（周日）3-4节，教一-408（补10月6日课程）；第二次课为9月22日（周二），第三次课为9月24日（周四）。
 - **Time:** 理论课：1-14周 星期二 3-4节、星期四 3-4节；实验课：2-10周（双周）、12-14周 星期二 11-12节
 - **Location:** 教一-408（理论课、实验课）
 - **Instructor:** Associate Professor [Tong Wei](http://palm.seu.edu.cn/weit) (weit@seu.edu.cn)
