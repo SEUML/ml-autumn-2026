@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <b>M</b>achine <b>L</b>earning
-description: Autumn 2025 • Southeast University
+description: Autumn 2026 • Southeast University
 logo: seu-logo.jpeg
 news: true
 ---
@@ -12,10 +12,11 @@ This course will cover the fundamental principles and usage methods of classic m
 
 ***
 
-- **Time:** 理论课：1-14周 星期二 3-4节,1-14周 星期四 3-4节；实验课：2-10周(双),12-14周 星期二 11-12节
-- **Location:** 教二-307（理论课）；教四-202（实验课）
+- **First class:** 2026年9月20日（周日）3-4节，教一-408（补10月6日课程）；第二次课为9月22日（周二），第三次课为9月24日（周四）。
+- **Time:** 理论课：1-14周 星期二 3-4节、星期四 3-4节；实验课：2-10周（双周）、12-14周 星期二 11-12节
+- **Location:** 教一-408（理论课、实验课）
 - **Instructor:** Associate Professor [Tong Wei](http://palm.seu.edu.cn/weit) (weit@seu.edu.cn)
-- **Teaching Assistants:**	Wei Chen, Jun-Jie Wang
+- **Teaching Assistants:** 罗茂林（[ml_luo@seu.edu.cn](mailto:ml_luo@seu.edu.cn)）；另一名待定
 - **Grading:**	Final exam (60%) + Assignments (40%)
 - **Discussion:** QQ (949244818)
 
