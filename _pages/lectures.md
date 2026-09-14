@@ -5,7 +5,6 @@ title: Schedule
 description: Autumn 2026
 ---
 
-<tr class="info"><td colspan="4">首次上课：2026年9月20日（周日），补10月6日课程；第二次：9月22日（周二）；第三次：9月24日（周四）。根据<a href="https://jwc.seu.edu.cn/xl/main.psp" target="_blank">学校校历</a>，10月1日至7日国庆放假，11月5日校运会停课。以下授课进度暂定，具体调整以课程通知为准；作业安排见<a href="{{ "/homework/" | relative_url }}">homework</a>页面。</td></tr>
 
 {% assign current_module = 0 %}
 {% assign skip_classes = 0 %}
