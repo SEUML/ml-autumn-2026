@@ -17,7 +17,7 @@ This course will cover the fundamental principles and usage methods of classic m
 - **Instructor:** Associate Professor [Tong Wei](http://palm.seu.edu.cn/weit) (weit@seu.edu.cn)
 - **Teaching Assistants:** 罗茂林（[ml_luo@seu.edu.cn](mailto:ml_luo@seu.edu.cn)）；另一名待定
 - **Grading:**	Final exam (60%) + Assignments (40%)
-- **Discussion:** QQ (949244818)
+- **Discussion:** 数智东南 机器学习-01 课程群
 
 
 
