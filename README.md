@@ -1,1 +1,1 @@
-# Machine Learning - Autumn 2025 @ Southeast University
+# Machine Learning - Autumn 2026 @ Southeast University
