@@ -1,0 +1,113 @@
+\documentclass[12pt,letterpaper, onecolumn]{exam}
+\usepackage{bm}
+\usepackage{amsmath,amsfonts}
+\usepackage{amssymb,amsthm}
+\usepackage[lmargin=71pt, tmargin=1.2in]{geometry}  %For centering solution box
+% \lhead{Leaft Header\\}
+% \rhead{Right Header\\}
+% \chead{\hline} % Un-comment to draw line below header
+\thispagestyle{empty}   %For removing header/footer from page 1
+
+\begin{document}
+
+\begingroup  
+    \centering
+    \LARGE Machine Learning\\
+    \LARGE Homework 2\\[0.5em]
+    \large Nov. 2025\\[0.5em]
+    \large Fill your Name\par
+    \large Fill your Student ID\par
+\endgroup
+\rule{\textwidth}{0.4pt}
+\pointsdroppedatright   %Self-explanatory
+\printanswers
+\renewcommand{\solutiontitle}{\noindent\textbf{Ans:}\enspace}   %Replace "Ans:" with starting keyword in solution box
+
+\begin{questions} 
+    \question
+    For the support vector machine (SVM), the data is not nearly separable in the real world application, so we need to modify SVM by introducing an error margin that must be minimized. 
+    
+    Specifically, the formulation we have looked at is known as the $\ell_1$ norm soft margin SVM. In this problem we will consider an alternative method, known as the $\ell_2$ norm soft margin SVM. This new algorithm is given by the following optimization problem (notice that the slack penalties are now squared):
+    \begin{equation}
+        \begin{split}
+            &\mathop{\min}\limits_{w, b, \xi} \frac{1}{2}\| w\|^2 + \frac{C}{2}\sum_{i=1}^{N}\xi_{i}^2\\
+            & \quad \text{s.t.} \quad y^{(i)}(w^Tx^{(i) + b})\ge 1-\xi_i, i=1, \dots, N
+        \end{split}
+    \end{equation}
+    
+    \begin{parts}
+        \part Notice that we have dropped the $\xi_{i} \ge 0$ constraint in the $\ell_2$ problem. Show that these non-negativity constraints can be removed. That is, show that the optimal value of the objective will be the same whether or not these constraints are present.
+        
+        \part What is the Lagrangian of the $\ell_2$ soft margin SVM optimization problem?
+        
+        \part Minimize the Lagrangian with respect to $w$, $b$, and $\xi$ by taking the following gradients: $\nabla _w \mathcal{L}$, $\frac{\partial \mathcal{L}}{\partial b}$ and $\nabla_{\xi} \mathcal{L}$, and then setting them equal to $0$. Here, $\xi = [\xi_1, \dots, \xi_N]^T$.
+        
+        \part What is the dual of the $\ell_2$ soft margin SVM optimization problem?
+        
+    \end{parts}
+    
+    \begin{solution}
+        \begin{parts}
+            \part 
+            
+            \part
+            
+            \part 
+
+            \part 
+            
+        \end{parts}
+    \end{solution}
+
+    \question
+        Consider the following convex optimization problem:
+        \begin{equation}
+            \begin{split}
+                &\!\!\!\mathop{\min}\limits_{x_1,\ldots,x_n} -\sum_{i=1}^{n}\log(\alpha_i + x_i) + \sum_{i=1}^n\beta_i x_i\\
+                &\!\text{s.t.} \quad x_i\geq0,\sum_{i=1}^n x_i = 1,
+            \end{split}
+        \end{equation}
+        where $\alpha_i>0$ and $\beta$ is a parameter. 
+    \begin{parts}
+        \part Write the KKT conditions for the problem.
+        \part Find the optimal solution of the problem. 
+    \end{parts}
+    
+    
+    \begin{solution}
+        \begin{parts}
+            \part 
+
+            \part 
+           
+        \end{parts}
+    \end{solution}
+
+    \question
+    Given four binary classification datasets, SVMs with different kernel functions were used for classification, and the following decision boundaries were obtained. Please analyze the characteristics of each decision boundary, determine the type of kernel function used, and explain your reasoning.
+    
+    \begin{parts}
+        \part A straight line perfectly separates two types of data.
+
+        \part Smooth curved boundaries, presenting as circles or ellipses.
+    
+        \part The polygonal boundary has distinct corners.
+    \end{parts}
+
+
+    \begin{solution}
+        \begin{parts}
+            \part 
+            
+            \part 
+            
+            \part 
+            
+        \end{parts} 
+    \end{solution}
+
+    
+\end{questions}
+\end{document}
+
+
