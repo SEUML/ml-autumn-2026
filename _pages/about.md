@@ -15,7 +15,7 @@ This course will cover the fundamental principles and usage methods of classic m
 - **Time:** 理论课：1-14周 星期二 3-4节、星期四 3-4节；实验课：2-10周（双周）、12-14周 星期二 11-12节
 - **Location:** 教一-408（理论课、实验课）
 - **Instructor:** Associate Professor [Tong Wei](http://palm.seu.edu.cn/weit) (weit@seu.edu.cn)
-- **Teaching Assistants:** 罗茂林（[ml_luo@seu.edu.cn](mailto:ml_luo@seu.edu.cn)）；另一名待定
+- **Teaching Assistants:** 罗茂林（[ml_luo@seu.edu.cn](mailto:ml_luo@seu.edu.cn)）；甘凯（[gank@seu.edu.cn](mailto:gank@seu.edu.cn)）
 - **Grading:**	Final exam (60%) + Assignments (40%)
 - **Discussion:** 数智东南 机器学习-01 课程群
 
