@@ -1,0 +1,103 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[a4paper,left=2.0cm,right=2.0cm,top=2.8cm,bottom=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{titlesec}
+
+\setmainfont{Times New Roman}
+\setstretch{1.3}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlist[itemize]{leftmargin=2em,itemsep=0.35em,topsep=0.35em}
+\setlist[itemize,2]{label=--,leftmargin=2.2em}
+
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{1.1em}{0.45em}
+\titlespacing*{\subsection}{0pt}{0.9em}{0.35em}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE Machine Learning Course 2026 Autumn: Experiment 1}
+
+  \vspace{1.35cm}
+  {\large September 29, 2026}
+\end{center}
+
+\vspace{0.7cm}
+
+\section{Overview}
+
+In this experiment, you will implement linear models, including linear regression,
+ridge regression, and logistic regression, and evaluate trained models on the test
+set. You will also compare your implementation with the models in
+\textbf{\textit{sklearn}}.
+
+\section{Dataset Description}
+
+\begin{sloppypar}
+The datasets are ready for you and are stored in the files
+\textbf{\textit{diabetes\_train.csv}},
+\textbf{\textit{diabetes\_test.csv}},
+\textbf{\textit{pendigit\_train.csv}}, and
+\textbf{\textit{pendigit\_test.csv}}. Each row in the files is a sample, with the
+last column being the label and the other columns being the features.
+\end{sloppypar}
+
+\section{Task Description}
+
+\subsection{Task 1}
+
+Given the \textbf{\textit{diabetes}} dataset, implement the
+\textbf{linear regression} models for \textbf{gradient descent} and
+\textbf{closed-form solution}, and evaluate the trained model on the test set.
+
+\subsection{Task 2}
+
+Given the \textbf{\textit{diabetes}} dataset, implement the
+\textbf{ridge regression} model with \textbf{gradient descent}, and evaluate the
+trained model on the test set. \textbf{5-fold cross-validation} will be employed to
+select the proper value of the hyperparameter, and the influence of these values on
+the trained model will be evaluated. In addition, use the
+\textbf{closed-form solution} to construct the \textbf{ridge regression} model using
+the \textbf{optimal hyperparameter} obtained by cross-validation.
+
+\subsection{Task 3}
+
+Given the \textbf{\textit{pendigit}} dataset, implement the
+\textbf{logistic regression} model with \textbf{gradient descent}, and evaluate the
+trained model on the test set.
+
+\subsection{Task 4}
+
+Compare the trained models with standard models in \textbf{\textit{sklearn}}.
+Discuss the difference between them and try to analyze the possible reasons.
+
+\section{Requirements}
+
+\begin{itemize}
+  \item Implement learning algorithms with \textbf{Python}. Basic data analysis
+        libraries such as \textbf{NumPy}, \textbf{Pandas}, \textbf{Matplotlib},
+        etc., are allowed to use.
+
+  \item For Tasks 1--3, you cannot use highly integrated libraries such as
+        \textbf{sklearn}, \textbf{PyTorch}, \textbf{TensorFlow}, etc. For Task 4
+        only, you may use \textbf{sklearn} for comparison.
+
+  \item Record the procedure of experiments in \textbf{Jupyter Notebook}. It is
+        recommended to use \textbf{Markdown} in Notebook to properly explain the
+        procedure.
+
+  \item Your submission includes:
+        \begin{itemize}
+          \item source code: python notebook (\textit{.ipynb});
+          \item \textit{report.doc} file: your report. Refer to the report template
+                for the format.
+        \end{itemize}
+\end{itemize}
+
+\end{document}
