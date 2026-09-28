@@ -14,10 +14,10 @@ There will be four homework assignments during the semester. You may discuss the
 - Homework 2: (*released: Nov. 1, 2026 , deadline: Nov. 22, 2026*)
 <br>
 [Assignment] [LaTeX template] [Solution]
-- Homework 3: (*released: Nov. 24, 2026, deadline: Dec. 16*)
+- Homework 3: (*released: Nov. 24, 2026, deadline: Dec. 16, 2026*)
 <br>
 [Assignment] [LaTeX template] [Solution]
-- Homework 4: (*released: Dec. 16, 2026, deadline: Dec. 31*)
+- Homework 4: (*released: Dec. 16, 2026, deadline: Dec. 31, 2026*)
 <br>
 [Assignment] [LaTeX template] [Solution]
 
@@ -43,11 +43,11 @@ There will be four laboratories. Each laboratory is meant to implement some mach
 <br>
 [Task]
 [Solution]
-- Laboratory 3: (*released: Nov. 17 2026, deadline: Dec. 8 2026*)
+- Laboratory 3: (*released: Nov. 17, 2026, deadline: Dec. 8, 2026*)
 <br>
 [Task]
 [Solution]
-- Laboratory 4: (*released: Dec. 9 2026, deadline: Jan. 6 2027*)
+- Laboratory 4: (*released: Dec. 9, 2026, deadline: Jan. 6, 2027*)
 <br>
 [Task]
 [Solution]
