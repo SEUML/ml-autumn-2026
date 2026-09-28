@@ -10,16 +10,16 @@ There will be four homework assignments during the semester. You may discuss the
 
 - Homework 1: (*released: Oct. 9, 2026, deadline: Oct. 30, 2026*)
 <br>
-[[Assignment]]({{ "/assets/assignments/hw1/assignment_v1.pdf" | relative_url }}){:target="_blank"} [[LaTeX template]]({{ "/assets/assignments/hw1/latex_v1.tex" | relative_url }}){:target="_blank"} [[Solution]]({{ "/assets/assignments/hw1/solution_v1.pdf" | relative_url }}){:target="_blank"}
+[Assignment](../assets/assignments/hw1/assignment_v1.pdf) [LaTeX template](../assets/assignments/hw1/latex_v1.tex) [Solution](../assets/assignments/hw1/solution_v1.pdf)
 - Homework 2: (*released: Nov. 1, 2026 , deadline: Nov. 22, 2026*)
 <br>
-[[Assignment]]({{ "/assets/assignments/hw2/assignment_v1.pdf" | relative_url }}){:target="_blank"} [[LaTeX template]]({{ "/assets/assignments/hw2/latex_v1.tex" | relative_url }}){:target="_blank"} [[Solution]]({{ "/assets/assignments/hw2/solution_v1.pdf" | relative_url }}){:target="_blank"}
+[Assignment](../assets/assignments/hw2/assignment_v1.pdf) [LaTeX template](../assets/assignments/hw2/latex_v1.tex) [Solution](../assets/assignments/hw2/solution_v1.pdf)
 - Homework 3: (*released: Nov 24, deadline: Dec. 16*)
 <br>
-[[Assignment]]({{ "/assets/assignments/hw3/assignment_v1.pdf" | relative_url }}){:target="_blank"} [[LaTeX template]]({{ "/assets/assignments/hw3/latex_v1.tex" | relative_url }}){:target="_blank"} [[Solution]]({{ "/assets/assignments/hw3/solution_v1.pdf" | relative_url }}){:target="_blank"}
+[Assignment](../assets/assignments/hw3/assignment_v1.pdf) [LaTeX template](../assets/assignments/hw3/latex_v1.tex) [Solution](../assets/assignments/hw3/solution_v1.pdf)
 - Homework 4: (*released: Dec. 16, deadline: Dec. 31*)
 <br>
-[[Assignment]]({{ "/assets/assignments/hw4/assignment_v1.pdf" | relative_url }}){:target="_blank"} [[LaTeX template]]({{ "/assets/assignments/hw4/latex_v1.tex" | relative_url }}){:target="_blank"} [[Solution]]({{ "/assets/assignments/hw4/solution_v1.pdf" | relative_url }}){:target="_blank"}
+[Assignment](../assets/assignments/hw4/assignment_v1.pdf) [LaTeX template](../assets/assignments/hw4/latex_v1.tex) [Solution](../assets/assignments/hw4/solution_v1.pdf)
 
 ***
 
@@ -30,24 +30,24 @@ There will be four laboratories. Each laboratory is meant to implement some mach
 
 - Laboratory 1: (*released: Sep. 28, 2026, deadline: Oct. 19, 2026*)
 <br>
-[[Warm-up]]({{ "/assets/assignments/lab1/Prerequisites.pdf" | relative_url }}){:target="_blank"}
-[[Task]]({{ "/assets/assignments/lab1/Experiment_1.pdf" | relative_url }}){:target="_blank"}
-[[Jupyter Notebook]]({{ "/assets/assignments/lab1/Experiment_1.ipynb" | relative_url }}){:target="_blank"}
-[[Report Template]]({{ "/assets/assignments/lab1/Template.doc" | relative_url }}){:target="_blank"}
-[[diabetes_train]]({{ "/assets/assignments/lab1/diabetes_train.csv" | relative_url }}){:target="_blank"}
-[[diabetes_test]]({{ "/assets/assignments/lab1/diabetes_test.csv" | relative_url }}){:target="_blank"}
-[[pendigit_train]]({{ "/assets/assignments/lab1/pendigit_train.csv" | relative_url }}){:target="_blank"}
-[[pendigit_test]]({{ "/assets/assignments/lab1/pendigit_test.csv" | relative_url }}){:target="_blank"}
-[[Solution]]({{ "/assets/assignments/lab1/solution_v1.ipynb" | relative_url }}){:target="_blank"}
+[Warm-up](../assets/assignments/lab1/Prerequisites.pdf)
+[Task](../assets/assignments/lab1/Experiment_1.pdf)
+[Jupyter Notebook](../assets/assignments/lab1/Experiment_1.ipynb)
+[Report Template](../assets/assignments/lab1/Template.doc)
+[diabetes_train](../assets/assignments/lab1/diabetes_train.csv)
+[diabetes_test](../assets/assignments/lab1/diabetes_test.csv)
+[pendigit_train](../assets/assignments/lab1/pendigit_train.csv)
+[pendigit_test](../assets/assignments/lab1/pendigit_test.csv)
+[Solution](../assets/assignments/lab1/solution_v1.ipynb)
 - Laboratory 2: (*released: Oct. 15, 2026 deadline: Nov. 11, 2026*)
 <br>
-[[Task]]({{ "/assets/assignments/lab2/lab2.zip" | relative_url }}){:target="_blank"}
-[[Solution]]({{ "/assets/assignments/lab2/solution_v1.ipynb" | relative_url }}){:target="_blank"}
+[Task](../assets/assignments/lab2/lab2.zip)
+[Solution](../assets/assignments/lab2/solution_v1.ipynb)
 - Laboratory 3: (*released: Nov. 17 2026, deadline: Dec. 8 2026*)
 <br>
-[[Task]]({{ "/assets/assignments/lab3/lab3.zip" | relative_url }}){:target="_blank"}
-[[Solution]]({{ "/assets/assignments/lab3/solution_v1.ipynb" | relative_url }}){:target="_blank"}
-- Laboratory 4: (*released: Dec. 9 2026, deadline: Jan. 6 2027 *)
+[Task](../assets/assignments/lab3/lab3.zip)
+[Solution](../assets/assignments/lab3/solution_v1.ipynb)
+- Laboratory 4: (*released: Dec. 9 2026, deadline: Jan. 6 2027*)
 <br>
-[[Task]]({{ "/assets/assignments/lab4/lab4.zip" | relative_url }}){:target="_blank"}
-[[Solution]]({{ "/assets/assignments/lab4/solution_v1.ipynb" | relative_url }}){:target="_blank"}
+[Task](../assets/assignments/lab4/lab4.zip)
+[Solution](../assets/assignments/lab4/solution_v1.ipynb)
