@@ -8,7 +8,7 @@ title: Laboratory and Homework Assignments
 There will be four homework assignments during the semester. You may discuss the homework questions with your peers, but the end product that you turn in should be your own work. We want you to learn with and from your peers, but each of you is responsible for your own work. （⚠️注意：所有 8 次作业用英文作答，包括实验报告；提交电子版文档）
 
 
-- Homework 1: (*released: Oct. 9, 2026, deadline: Oct. 30, 2026*)
+- Homework 1: (*released: Oct. 8, 2026, deadline: Oct. 30, 2026*)
 <br>
 [[Assignment]](../assets/assignments/hw1/hw1_2026.pdf) [[LaTeX template]](../assets/assignments/hw1/latex_2026_v1.tex) [Solution]
 - Homework 2: (*released: Nov. 1, 2026 , deadline: Nov. 22, 2026*)
