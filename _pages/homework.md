@@ -39,7 +39,7 @@ There will be four laboratories. Each laboratory is meant to implement some mach
 [[pendigit_train]](../assets/assignments/lab1/pendigit_train.csv)
 [[pendigit_test]](../assets/assignments/lab1/pendigit_test.csv)
 [Solution]
-- Laboratory 2: (*released: Oct. 15, 2026 deadline: Nov. 11, 2026*)
+- Laboratory 2: (*released: Oct. 13, 2026, deadline: Nov. 11, 2026*)
 <br>
 [Task]
 [Solution]
