@@ -41,7 +41,11 @@ There will be four laboratories. Each laboratory is meant to implement some mach
 [Solution]
 - Laboratory 2: (*released: Oct. 13, 2026, deadline: Nov. 11, 2026*)
 <br>
-[Task]
+[[Task]](../assets/assignments/lab2/Experiment_2.pdf)
+[[Jupyter Notebook]](../assets/assignments/lab2/Experiment_2.ipynb)
+[[Report Template]](../assets/assignments/lab2/Template.doc)
+[[T1_data]](../assets/assignments/lab2/T1_data.csv)
+[[T2_data]](../assets/assignments/lab2/T2_data.csv)
 [Solution]
 - Laboratory 3: (*released: Nov. 17, 2026, deadline: Dec. 8, 2026*)
 <br>

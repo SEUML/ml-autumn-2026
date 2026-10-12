@@ -1,4 +1,9 @@
 assets/.DS_Store
+.venv-lab2/
+.lab2-cache/
+**/.ipynb_checkpoints/
+**/__pycache__/
+lab2_backup
 .DS_Store
 assets/slides/.DS_Store
 .DS_Store
