@@ -47,7 +47,7 @@
 
 - date: Tues, 2026/10/13
   title: >
-    <strong> Model Selection & Evaluation</strong>
+    <strong>Logistic Regression (continued), Model Selection & Evaluation</strong>
   slides: "../assets/slides/lecture4.pdf"
   readings:
     - <a href="https://en.wikipedia.org/wiki/Multi-label_classification" target="_blank"> Multi-class and Multi-labels </a>
