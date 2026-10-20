@@ -9,7 +9,7 @@ layout: default
   </header>
 
   <article class="post-content {{page.title}} clearfix">
-    <table class="table table-hover">
+    <table id="lecture-schedule" class="table table-hover">
       <colgroup>
         <col style="width:10%">
         <col style="width:35%">
@@ -31,3 +31,52 @@ layout: default
   </article>
 
 </div>
+
+<script>
+(function () {
+  var rows = Array.from(document.querySelectorAll('#lecture-schedule tbody tr[data-lecture-date]'));
+  var dateFormatter = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit'
+  });
+
+  function updateLectureHighlight() {
+    var parts = {};
+    dateFormatter.formatToParts(new Date()).forEach(function (part) {
+      parts[part.type] = part.value;
+    });
+    var today = parts.year + '-' + parts.month + '-' + parts.day;
+    var nextRow = null;
+    var nextDate = null;
+
+    rows.forEach(function (row) {
+      var date = row.getAttribute('data-lecture-date');
+      row.classList.remove('past', 'upcoming', 'warning');
+      row.removeAttribute('aria-current');
+      // Ignore undated entries such as the TBD final exam.
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+        row.classList.add('upcoming');
+        return;
+      }
+      row.classList.add(date < today ? 'past' : 'upcoming');
+      if (date >= today && (nextDate === null || date < nextDate)) {
+        nextRow = row;
+        nextDate = date;
+      }
+    });
+
+    if (nextRow) {
+      nextRow.classList.remove('upcoming');
+      nextRow.classList.add('warning');
+      nextRow.setAttribute('aria-current', 'date');
+    }
+  }
+
+  updateLectureHighlight();
+  // Keep an open tab current across midnight and when returning to the page.
+  window.setInterval(updateLectureHighlight, 60000);
+  window.addEventListener('pageshow', updateLectureHighlight);
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) updateLectureHighlight();
+  });
+}());
+</script>
