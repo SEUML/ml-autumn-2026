@@ -64,47 +64,47 @@
 
 - date: Tues, 2026/10/20
   title: >
-    <strong> Support Vector Machine (Formulation) </strong>
-  slides: "../assets/slides/lecture5.pdf"
-  readings:
-  logistics:
-
-- date: Thurs, 2026/10/22
-  title: >
-    <strong> Support Vector Machine (Optimization)</strong>
+    <strong> Support Vector Machine (Formulation & Optimization)</strong>
   slides: "../assets/slides/lecture5.pdf"
   readings:
   -  <a href="https://www.stat.cmu.edu/~ryantibs/convexopt-F15/scribes/11-dual-gen-scribed.pdf" target="_blank"> Primal and dual problems </a>
   -  <a href="https://alex.smola.org/teaching/cmu2013-10-701x/slides/R5-duality_svm.pdf" target="_blank"> Duality and SVM </a>
   logistics:
 
-- date: Tues, 2026/10/27
+- date: Thurs, 2026/10/22
   title: >
     <strong> Support Vector Machine (Soft margin)</strong>
   slides: "../assets/slides/lecture5.pdf"
   readings:
     - <a href="http://jitkomut.eng.chula.ac.th/optim/duality.pdf" target="_blank"> Duality Theory </a>
-  logistics: <strong>实验课提醒：今天 11-12节，教一-408（第6周）</strong>
+  logistics:
 
-- date: Thurs, 2026/10/29
+- date: Tues, 2026/10/27
   title: >
     <strong> Support Vector Machine (Kernel)</strong>
   slides: "../assets/slides/lecture5.pdf"
   readings:
     - <a href="https://davidrosenberg.github.io/mlcourse/Archive/2019/Lectures/05a.representer-theorem.pdf" target="_blank"> The Representer Theorem </a>
-  logistics:
+  logistics: <strong>实验课提醒：今天 11-12节，教一-408（第6周）</strong>
 
-- date: Tues, 2026/11/03
+- date: Thurs, 2026/10/29
   title: >
     <strong> Neural Networks: Introduction</strong>
   slides: "../assets/slides/lecture6.pdf"
   readings:
   logistics:
 
-- date: Tues, 2026/11/10
+- date: Tues, 2026/11/03
   title: >
     <strong> Neural Networks: Introduction (continued) </strong>
   slides: "../assets/slides/lecture6.pdf"
+  readings:
+  logistics:
+
+- date: Tues, 2026/11/10
+  title: >
+    <strong> Backpropagation</strong>
+  slides: "../assets/slides/lecture7.pdf"
   readings:
   logistics: <strong>实验课提醒：今天 11-12节，教一-408（第8周）</strong>
 
@@ -117,41 +117,41 @@
 
 - date: Tues, 2026/11/17
   title: >
-    <strong> Backpropagation</strong>
-  slides: "../assets/slides/lecture7.pdf"
-  readings:
-  logistics:
-
-- date: Thurs, 2026/11/19
-  title: >
     <strong> Convolutional Neural Network </strong>
   slides: "../assets/slides/lecture8.pdf"
   readings:
   logistics:
 
-- date: Tues, 2026/11/24
+- date: Thurs, 2026/11/19
   title: >
     <strong> Convolutional Neural Network (continued), Recurrent Neural Network </strong>
   slides:
     - "../assets/slides/lecture8.pdf"
     - "../assets/slides/lecture9.pdf"
   readings:
-  logistics: <strong>实验课提醒：今天 11-12节，教一-408（第10周）</strong>
+  logistics:
 
-- date: Thurs, 2026/11/26
+- date: Tues, 2026/11/24
   title: >
     <strong> Recurrent Neural Network </strong>
   slides: "../assets/slides/lecture9.pdf"
   readings:
-  logistics:
+  logistics: <strong>实验课提醒：今天 11-12节，教一-408（第10周）</strong>
 
-- date: Tues, 2026/12/01
+- date: Thurs, 2026/11/26
   title: >
     <strong> Decision Tree</strong>
   slides: "../assets/slides/lecture10.pdf"
   readings:
     - <a href="https://www.princeton.edu/~cuff/ele201/kulkarni_text/information.pdf" target="_blank"> Information, Entropy, and Coding </a>
     - <a href="https://www.youtube.com/watch?v=wr9gUr-eWdA">Decision Tree (lecture@Stanford)</a>
+  logistics:
+
+- date: Tues, 2026/12/01
+  title: >
+    <strong> Decision Tree (continued)</strong>
+  slides: "../assets/slides/lecture10.pdf"
+  readings:
   logistics:
 
 - date: Thurs, 2026/12/03
@@ -163,18 +163,19 @@
 
 - date: Tues, 2026/12/08
   title: >
-    <strong> Decision Tree (continued)</strong>
-  slides: "../assets/slides/lecture10.pdf"
-  readings:
-  logistics: <strong>实验课提醒：今天 11-12节，教一-408（第12周）</strong>
-
-- date: Thurs, 2026/12/10
-  title: >
     <strong> Ensemble </strong>
   slides: "../assets/slides/lecture11.pdf"
   readings:
   - <a href="https://www.cs.toronto.edu/~mbrubake/teaching/C11/Handouts/AdaBoost.pdf" target="_blank"> AdaBoost </a>
   - <a href="https://www.cs.toronto.edu/~rgrosse/courses/csc311_f20/slides/lec06.pdf" target="_blank"> Bagging, AdaBoost </a>
+  logistics: <strong>实验课提醒：今天 11-12节，教一-408（第12周）</strong>
+
+- date: Thurs, 2026/12/10
+  title: >
+    <strong> Ensemble (continued)</strong>
+  slides: "../assets/slides/lecture11.pdf"
+  readings:
+  - <a href="https://www.youtube.com/watch?v=UHBmv7qCey4" target="_blank"> Boosting (lecture@MIT) </a>
   logistics:
 
 - date: Tues, 2026/12/15
@@ -182,27 +183,26 @@
     <strong> Ensemble (continued)</strong>
   slides: "../assets/slides/lecture11.pdf"
   readings:
-  - <a href="https://www.youtube.com/watch?v=UHBmv7qCey4" target="_blank"> Boosting (lecture@MIT) </a>
   logistics: <strong>实验课提醒：今天 11-12节，教一-408（第13周）</strong>
 
 - date: Thurs, 2026/12/17
   title: >
-    <strong> Ensemble (continued)</strong>
-  slides: "../assets/slides/lecture11.pdf"
+    <strong> Clustering </strong>
+  slides: "../assets/slides/lecture12.pdf"
   readings:
   logistics:
 
 - date: Tues, 2026/12/22
   title: >
-    <strong> Clustering </strong>
+    <strong> Clustering (continued)</strong>
   slides: "../assets/slides/lecture12.pdf"
   readings:
   logistics: <strong>实验课提醒：今天 11-12节，教一-408（第14周）</strong>
 
 - date: Thurs, 2026/12/24
   title: >
-    <strong> Clustering (continued)</strong>
-  slides: "../assets/slides/lecture12.pdf"
+    <strong>复习课（Review, Q&A）</strong>
+  slides:
   readings:
   logistics:
 
@@ -258,3 +258,4 @@
 #   readings:
 #     - <a href="https://www.lri.fr/~sebag/COURS/EM_algorithm.pdf" target="_blank"> The Expectation Maximization Algorithm </a>
 #   logistics: HW3 Due; HW4 Out
+
