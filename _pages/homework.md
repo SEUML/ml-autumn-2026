@@ -47,7 +47,7 @@ There will be four laboratories. Each laboratory is meant to implement some mach
 [[T1_data]](../assets/assignments/lab2/T1_data.csv)
 [[T2_data]](../assets/assignments/lab2/T2_data.csv)
 [Solution]
-- Laboratory 3: (*released: Nov. 10, 2026, deadline: Dec. 8, 2026*)
+- Laboratory 3: (*released: Nov. 10, 2026, deadline: Dec. 1, 2026*)
 <br>
 [Task]
 [Solution]
