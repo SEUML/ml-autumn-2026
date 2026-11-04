@@ -1,0 +1,132 @@
+\documentclass[12pt,letterpaper, onecolumn]{exam}
+\usepackage{bm}
+\usepackage{amsmath,amsfonts}
+\usepackage{amssymb,amsthm}
+\usepackage[lmargin=71pt, tmargin=1.2in]{geometry}  %For centering solution box
+% \lhead{Leaft Header\\}
+% \rhead{Right Header\\}
+% \chead{\hline} % Un-comment to draw line below header
+\thispagestyle{empty}   %For removing header/footer from page 1
+
+\begin{document}
+
+\begingroup
+    \centering
+    \LARGE Machine Learning\\
+    \LARGE Homework 2\\[0.5em]
+    \large Nov. 2026\\[0.5em]
+    \large Fill your Name\par
+    \large Fill your Student ID\par
+\endgroup
+\rule{\textwidth}{0.4pt}
+\pointsdroppedatright   %Self-explanatory
+\printanswers
+\renewcommand{\solutiontitle}{\noindent\textbf{Ans:}\enspace}   %Replace "Ans:" with starting keyword in solution box
+
+\begin{questions}
+
+    \question
+    Let $\{(x^{(i)},y^{(i)})\}_{i=1}^{N}$ be $N$ training samples,
+    with $x^{(i)}\in\mathbb{R}^d$ and $y^{(i)}\in\{-1,+1\}$.
+    Here $N$ and $d$ are positive integers. Consider the $\ell_2$
+    soft margin SVM:
+    \begin{equation}
+        \begin{split}
+            &\mathop{\min}\limits_{w,b,\xi}
+            \frac{1}{2}\|w\|_2^2+\frac{C}{2}\sum_{i=1}^{N}\xi_i^2\\
+            &\quad\text{s.t.}\quad
+            y^{(i)}(w^Tx^{(i)}+b)\geq 1-\xi_i,\quad
+            \xi_i\geq 0,\quad i=1,\ldots,N.
+        \end{split}
+    \end{equation}
+    The variables are $w\in\mathbb{R}^d$, $b\in\mathbb{R}$, and
+    $\xi=(\xi_1,\ldots,\xi_N)^T\in\mathbb{R}^N$;
+    $C>0$ is given and $\|\cdot\|_2$ is the Euclidean norm.
+    \begin{parts}
+        \part For fixed $w$ and $b$, find the minimizing slack
+        $\xi_i$ for each sample. Substitute your result into the
+        objective to obtain an unconstrained problem in $w$ and $b$.
+        \part The constraints $\xi_i\geq 0$ can be omitted without
+        changing the optimal value. For this equivalent formulation,
+        write the Lagrangian $\mathcal{L}(w,b,\xi,\alpha)$, where
+        $\alpha=(\alpha_1,\ldots,\alpha_N)^T\in\mathbb{R}^N$ collects
+        the nonnegative margin-constraint multipliers $\alpha_i$.
+        \part Set the derivatives of $\mathcal{L}$ with respect to
+        $w$, $b$, and each $\xi_i$ equal to zero, and give the
+        resulting relations.
+        \part Derive the dual problem, specifying its objective and
+        all constraints on $\alpha$.
+    \end{parts}
+
+    \begin{solution}
+        \begin{parts}
+            \part
+            \part
+            \part
+            \part
+        \end{parts}
+    \end{solution}
+
+
+    \newpage
+    \question
+    For a positive integer $n$ and variable
+    $x=(x_1,\ldots,x_n)^T\in\mathbb{R}^n$, consider
+    \begin{equation}
+        \begin{split}
+            &\mathop{\min}\limits_{x}
+            -\sum_{i=1}^{n}\log(a_i+x_i)+\sum_{i=1}^{n}\beta_i x_i\\
+            &\quad\text{s.t.}\quad x_i\geq 0\ (i=1,\ldots,n),
+            \qquad \sum_{i=1}^{n}x_i=B.
+        \end{split}
+    \end{equation}
+    The parameter vectors $a=(a_1,\ldots,a_n)^T$ and
+    $\beta=(\beta_1,\ldots,\beta_n)^T$ are given, with
+    $a_i>0$, $\beta_i\in\mathbb{R}$, and $B>0$. The logarithm is natural.
+    \begin{parts}
+        \part Write the Lagrangian and KKT conditions. Define all multipliers.
+        \part Let $x^*$ be the optimal solution and $\mu^*$ the
+        multiplier of $\sum_{i=1}^{n}x_i=B$ at the optimum.
+        Express $x_i^*$ in terms of $\mu^*$ and give an equation
+        determining $\mu^*$. Then find $x^*$ for
+        $n=3$, $a=(1,2,1)^T$, $\beta=(0,0,1)^T$, and $B=2$.
+    \end{parts}
+
+    \begin{solution}
+        \begin{parts}
+            \part
+            \part
+        \end{parts}
+    \end{solution}
+
+
+    \question
+    For input vectors $x,z\in\mathbb{R}^2$, consider three SVM kernels:
+    linear $K_{\mathrm{lin}}(x,z)=x^Tz$, quadratic
+    $K_{\mathrm{quad}}(x,z)=(x^Tz+1)^2$, and Gaussian
+    $K_{\mathrm{RBF}}(x,z)=e^{-\|x-z\|_2^2/(2\sigma^2)}$.
+    Here $\|\cdot\|_2$ is the Euclidean norm and $\sigma>0$ is the
+    bandwidth. Give brief explanations; no derivations are required.
+    \begin{parts}
+        \part Which kernel is the simplest choice for linearly separable
+        classes? Why?
+        \part Can a linear kernel represent a circular boundary?
+        Suggest a suitable nonlinear candidate and explain.
+        Several choices may be valid.
+        \part A Gaussian-kernel SVM produces many small bends around
+        training samples. To make each sample's influence less local,
+        should $\sigma$ be increased or decreased? Keep other settings
+        fixed and explain.
+    \end{parts}
+
+    \begin{solution}
+        \begin{parts}
+            \part
+            \part
+            \part
+        \end{parts}
+    \end{solution}
+
+\end{questions}
+\end{document}
+
