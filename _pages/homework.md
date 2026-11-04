@@ -51,7 +51,7 @@ There will be four laboratories. Each laboratory is meant to implement some mach
 <br>
 [Task]
 [Solution]
-- Laboratory 4: (*released: Dec. 9, 2026, deadline: Jan. 6, 2027*)
+- Laboratory 4: (*released: Dec. 8, 2026, deadline: Jan. 6, 2027*)
 <br>
 [Task]
 [Solution]
