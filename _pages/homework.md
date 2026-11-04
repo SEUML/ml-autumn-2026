@@ -13,7 +13,7 @@ There will be four homework assignments during the semester. You may discuss the
 [[Assignment]](../assets/assignments/hw1/hw1_2026.pdf) [[LaTeX template]](../assets/assignments/hw1/latex_2026_v1.tex) [Solution]
 - Homework 2: (*released: Nov. 1, 2026 , deadline: Nov. 22, 2026*)
 <br>
-[[Assignment]](../assets/assignments/hw2/assignment_2026.pdf) [[LaTeX template]](../assets/assignments/hw2/assignment_2026.pdf) [Solution]
+[[Assignment]](../assets/assignments/hw2/assignment_2026.pdf) [[LaTeX template]](../assets/assignments/hw2/assignment_2026.tex) [Solution]
 - Homework 3: (*released: Nov. 24, 2026, deadline: Dec. 16, 2026*)
 <br>
 [Assignment] [LaTeX template] [Solution]
