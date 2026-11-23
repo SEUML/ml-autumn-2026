@@ -1,0 +1,212 @@
+\documentclass[12pt,letterpaper,onecolumn]{exam}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[lmargin=71pt,tmargin=1.2in]{geometry}
+
+\begin{document}
+\thispagestyle{empty}
+\begingroup
+    \centering
+    \LARGE Machine Learning\\
+    \LARGE Homework 3: Reference Solutions\\[0.5em]
+    \large Nov. 2026\\[0.5em]
+    \normalsize Released: Nov. 24, 2026 \qquad Due: Dec. 16, 2026\par
+\endgroup
+\noindent\rule{\textwidth}{0.4pt}\par
+\printanswers
+\renewcommand{\solutiontitle}{\noindent\textbf{Ans:}\enspace}
+
+\begin{questions}
+    \question Regularized backpropagation.
+    \begin{solution}
+        Use the notation of Problem 1 in the assignment.
+        The regularizer depends directly on the weights; it has no
+        dependence on $z^1$, $h$, or $z^2$ when these are treated as
+        intermediate variables in the computation graph.
+        \begin{parts}
+            \part Write $p=\hat y$. For $j,k\in\{1,\ldots,q\}$,
+            \[
+                \frac{\partial p_k}{\partial z^2_j}
+                =p_k(\mathbf{1}_{\{k=j\}}-p_j),
+                \qquad
+                \frac{\partial L_{\mathrm{CE}}}{\partial p_k}
+                =-\frac{y_k}{p_k}.
+            \]
+            By the chain rule and $\sum_k y_k=1$,
+            \[
+                \frac{\partial L_{\mathrm{CE}}}{\partial z^2_j}
+                =-\sum_{k=1}^q y_k(\mathbf{1}_{\{k=j\}}-p_j)
+                =p_j-y_j.
+            \]
+            Thus
+            \[
+                \boxed{\delta^2=\hat y-y\in\mathbb{R}^q.}
+            \]
+
+            \part Since $z^2_k=\sum_{i=1}^n W^2_{ik}h_i+b^2_k$,
+            \[
+                \frac{\partial L_{\mathrm{CE}}}{\partial W^2_{ik}}
+                =h_i\delta^2_k,\qquad
+                \frac{\partial L_{\mathrm{CE}}}{\partial b^2_k}
+                =\delta^2_k.
+            \]
+            Also,
+            $\partial(\lambda\|W^\ell\|_F^2/2)/\partial W^\ell
+            =\lambda W^\ell$ for $\ell=1,2$. Therefore
+            \[
+                \boxed{\frac{\partial J}{\partial W^2}
+                =h(\delta^2)^T+\lambda W^2
+                \in\mathbb{R}^{n\times q},\qquad
+                \frac{\partial J}{\partial b^2}
+                =\delta^2\in\mathbb{R}^q.}
+            \]
+            Propagating through the output linear map gives
+            \[
+                \frac{\partial L_{\mathrm{CE}}}{\partial h}
+                =W^2\delta^2\in\mathbb{R}^n.
+            \]
+            The sigmoid acts element-wise, so
+            \[
+                \boxed{\delta^1
+                =(W^2\delta^2)\odot h\odot(\mathbf{1}-h)
+                \in\mathbb{R}^n,}
+            \]
+            where $\mathbf{1}\in\mathbb{R}^n$ is the all-ones vector.
+            Finally, $z^1_i=\sum_{r=1}^d W^1_{ri}x_r+b^1_i$ implies
+            \[
+                \frac{\partial L_{\mathrm{CE}}}{\partial W^1_{ri}}
+                =x_r\delta^1_i,\qquad
+                \frac{\partial L_{\mathrm{CE}}}{\partial b^1_i}
+                =\delta^1_i.
+            \]
+            Adding the direct regularization gradient gives
+            \[
+                \boxed{\frac{\partial J}{\partial W^1}
+                =x(\delta^1)^T+\lambda W^1
+                \in\mathbb{R}^{d\times n},\qquad
+                \frac{\partial J}{\partial b^1}
+                =\delta^1\in\mathbb{R}^n.}
+            \]
+            The biases have no additional regularization term.
+
+            \part Using the current parameters to evaluate both errors,
+            \begin{align*}
+                W^1_{\mathrm{new}}
+                &=(1-\eta\lambda)W^1-\eta x(\delta^1)^T,\\
+                W^2_{\mathrm{new}}
+                &=(1-\eta\lambda)W^2-\eta h(\delta^2)^T.
+            \end{align*}
+            Compared with the unregularized updates, each weight matrix
+            receives the additional term $-\eta\lambda W^\ell$.
+            For $0<\eta\lambda<1$, the factor $1-\eta\lambda$
+            shrinks the current weights before the data-gradient step.
+            There is no such decay term for the biases.
+        \end{parts}
+    \end{solution}
+
+    \newpage
+    \question One gradient descent step with ReLU and $\lambda=0$.
+    \begin{solution}
+        All numerical results below are rounded to four decimal places;
+        the updates use unrounded intermediate values.
+        \begin{parts}
+            \part The hidden pre-activation and activation are
+            \[
+                z^1=
+                \begin{bmatrix}0.4&0.2\\-0.3&0.5\end{bmatrix}
+                \begin{bmatrix}1\\-1\end{bmatrix}
+                +\begin{bmatrix}0.1\\0.2\end{bmatrix}
+                =\begin{bmatrix}0.3\\-0.6\end{bmatrix},
+                \qquad
+                h=\begin{bmatrix}0.3\\0\end{bmatrix}.
+            \]
+            Thus
+            \[
+                z^2=
+                \begin{bmatrix}0.6&-0.2\\-0.4&0.3\end{bmatrix}
+                \begin{bmatrix}0.3\\0\end{bmatrix}
+                +\begin{bmatrix}0.1\\-0.1\end{bmatrix}
+                =\begin{bmatrix}0.28\\-0.22\end{bmatrix}.
+            \]
+            The prediction and loss are
+            \[
+                \hat y=\frac{1}{e^{0.28}+e^{-0.22}}
+                \begin{bmatrix}e^{0.28}\\e^{-0.22}\end{bmatrix}
+                \approx\begin{bmatrix}0.6225\\0.3775\end{bmatrix},
+            \]
+            \[
+                L_{\mathrm{CE}}=-\log\hat y_2
+                =\log(1+e^{0.5})\approx 0.9741.
+            \]
+
+            \part Let $s=1/(1+e^{-0.5})\approx0.6224593312$.
+            The output error is
+            \[
+                \delta^2=\hat y-y=
+                \begin{bmatrix}s\\-s\end{bmatrix}
+                \approx\begin{bmatrix}0.6225\\-0.6225\end{bmatrix}.
+            \]
+            Since both hidden pre-activations are nonzero, the ReLU
+            derivative is unambiguous:
+            \[
+                \operatorname{ReLU}'(z^1)
+                =\begin{bmatrix}1\\0\end{bmatrix},\qquad
+                W^2\delta^2=\begin{bmatrix}s\\-0.5s\end{bmatrix}.
+            \]
+            Hence
+            \[
+                \delta^1=(W^2\delta^2)\odot
+                \operatorname{ReLU}'(z^1)
+                =\begin{bmatrix}s\\0\end{bmatrix}
+                \approx\begin{bmatrix}0.6225\\0\end{bmatrix}.
+            \]
+            The four gradients are
+            \begin{align*}
+                \frac{\partial L_{\mathrm{CE}}}{\partial W^1}
+                &=x(\delta^1)^T
+                =\begin{bmatrix}s&0\\-s&0\end{bmatrix}
+                \approx\begin{bmatrix}0.6225&0\\-0.6225&0\end{bmatrix},\\
+                \frac{\partial L_{\mathrm{CE}}}{\partial b^1}
+                &=\delta^1
+                \approx\begin{bmatrix}0.6225\\0\end{bmatrix},\\
+                \frac{\partial L_{\mathrm{CE}}}{\partial W^2}
+                &=h(\delta^2)^T
+                =\begin{bmatrix}0.3s&-0.3s\\0&0\end{bmatrix}
+                \approx\begin{bmatrix}0.1867&-0.1867\\0&0\end{bmatrix},\\
+                \frac{\partial L_{\mathrm{CE}}}{\partial b^2}
+                &=\delta^2
+                \approx\begin{bmatrix}0.6225\\-0.6225\end{bmatrix}.
+            \end{align*}
+
+            \part Applying $\theta_{\mathrm{new}}
+            =\theta-0.1\,\partial L_{\mathrm{CE}}/\partial\theta$
+            to each parameter, using the same initial gradients,
+            \begin{align*}
+                W^1_{\mathrm{new}}
+                &=\begin{bmatrix}0.4-0.1s&-0.3\\0.2+0.1s&0.5\end{bmatrix}
+                \approx\begin{bmatrix}0.3378&-0.3000\\0.2622&0.5000\end{bmatrix},\\
+                b^1_{\mathrm{new}}
+                &=\begin{bmatrix}0.1-0.1s\\0.2\end{bmatrix}
+                \approx\begin{bmatrix}0.0378\\0.2000\end{bmatrix},\\
+                W^2_{\mathrm{new}}
+                &=\begin{bmatrix}0.6-0.03s&-0.4+0.03s\\-0.2&0.3\end{bmatrix}
+                \approx\begin{bmatrix}0.5813&-0.3813\\-0.2000&0.3000\end{bmatrix},\\
+                b^2_{\mathrm{new}}
+                &=\begin{bmatrix}0.1-0.1s\\-0.1+0.1s\end{bmatrix}
+                \approx\begin{bmatrix}0.0378\\-0.0378\end{bmatrix}.
+            \end{align*}
+
+            \part Hidden neuron 2 is inactive because $z^1_2=-0.6<0$.
+            Its activation and ReLU derivative are both zero.
+            Therefore $\delta^1_2=0$: column 2 of
+            $\partial L_{\mathrm{CE}}/\partial W^1$ and entry 2 of
+            $\partial L_{\mathrm{CE}}/\partial b^1$ are zero.
+            Also, $h_2=0$, so row 2 of
+            $\partial L_{\mathrm{CE}}/\partial W^2$ is zero.
+            The corresponding parameters are unchanged in this step.
+            Both output-bias gradients are nonzero. These conclusions
+            concern this sample and these initial parameters; they do
+            not imply that neuron 2 is inactive for every input.
+        \end{parts}
+    \end{solution}
+\end{questions}
+\end{document}
